@@ -19,6 +19,7 @@ header nav {
 .logo {
 	width: 32px;
 	margin-right: 15px;
+	filter: invert(100%);
 }
 
 input.form-control {
@@ -81,60 +82,19 @@ nav #profile {
 
 .repo-owner {
 	display: flex;
-	padding: 2.8rem 2.5rem 1rem;
+	padding: 3.5rem 2.5rem 1rem;
 	border-bottom: 1px solid #eaecef;
-}
-
-.repo-owner .profile-tab,
-#info #profile_info {
-	width: 20vw;
-	margin-right: 1em;
-	flex: 0.4;
-}
-
-.repo-owner .menu-tab,
-#info #repos {
-	flex: 1;
-}
-
-.repo-owner .menu-tab a {
-	text-decoration: none;
-	padding: 0 0.9em 1em;
-	color: #24292e;
-	position: relative;
-	height: 20px;
-	border-bottom: 2px solid transparent;
-}
-
-.repo-owner .menu-tab a:not(.active) {
-	transition: border-bottom 0.3s 0s ease-out;
-}
-
-.repo-owner .menu-tab a:hover {
-	border-bottom: 2px solid rgb(181, 173, 173);
-}
-
-.repo-owner .menu-tab a.active {
-	border-bottom: 2px solid #f9826c;
-}
-
-.repo-owner .menu-tab a img {
-	margin-right: 5px;
-	vertical-align: middle;
-}
-
-.repo-owner .menu-tab a span#badge {
-	padding: 5px 6px;
-	background-color: #d1d5da80;
-	color: #24292e;
-	font-size: 12px;
-	border-radius: 50%;
-	font-weight: 400 !important;
 }
 
 #info {
 	display: flex;
 	padding: 1rem 2.5rem;
+}
+
+#info #profile_info {
+	width: 20vw;
+	margin-right: 1em;
+	flex: 0.4;
 }
 
 .big.avatar {
@@ -179,6 +139,51 @@ nav #profile {
 #bio {
 	font-size: 16px;
 	line-height: 1.5em;
+}
+
+#info #repos {
+	flex: 1;
+}
+
+#info .menu-tab {
+	margin-top: -3.7em;
+	margin-bottom: 1.8em;
+}
+
+#info .menu-tab a {
+	text-decoration: none;
+	padding: 0 0.9em 1em;
+	color: #24292e;
+	position: relative;
+	height: 20px;
+	border-bottom: 2px solid transparent;
+	display: inline-block;
+}
+
+#info .menu-tab a:not(.active) {
+	transition: border-bottom 0.3s 0s ease-out;
+}
+
+#info .menu-tab a:hover {
+	border-bottom: 2px solid rgb(181, 173, 173);
+}
+
+#info .menu-tab a.active {
+	border-bottom: 2px solid #f9826c;
+}
+
+#info .menu-tab a img {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+#info .menu-tab a span#badge {
+	padding: 4px 7px;
+	background-color: #d1d5da80;
+	color: #24292e;
+	font-size: 12px;
+	border-radius: 50%;
+	font-weight: 400 !important;
 }
 
 .find-repo {
@@ -261,7 +266,7 @@ nav #profile {
 }
 
 .add-repo-info > span {
-	margin-right: 1.5em;
+	margin-right: 1.2em;
 }
 
 .fork_n_star {
@@ -271,4 +276,80 @@ nav #profile {
 .fork_n_star img {
 	position: relative;
 	top: 3px;
+}
+
+footer {
+	border-top: 1px solid #eaecef;
+	padding: 1rem 2rem;
+	color: #586069;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+footer img {
+	filter: invert(50%);
+	margin-right: 10px;
+	width: 32px;
+	vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+	#profile > span:not(.notification),
+	.searchbar {
+		display: none;
+	}
+
+	.repo-owner {
+		display: none;
+	}
+
+	#info {
+		flex-direction: column;
+		padding: 1rem;
+		margin-bottom: 10%;
+	}
+
+	#info #profile_info {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 0.5em;
+	}
+
+	#name {
+		flex: 1;
+		margin-left: 1.5em;
+		align-self: center;
+	}
+
+	#bio {
+		width: 100%;
+	}
+
+	.big.avatar {
+		margin-top: 0;
+		width: 150px;
+	}
+
+	#mini_img_icon {
+		right: 0;
+		bottom: 20px;
+	}
+
+	#info .menu-tab {
+		margin-top: 0;
+		border-bottom: 1px solid #eaecef;
+	}
+
+	#info .menu-tab a {
+		margin: 10px auto auto;
+	}
+
+	.repo-desc .desc {
+		flex: 1;
+	}
+
+	footer {
+		padding: 1em;
+	}
 }

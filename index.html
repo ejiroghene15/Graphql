@@ -5,12 +5,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Ejiroghene | Repositories</title>
 		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="shortcut icon"
+			href="./svgs/github-logo.svg"
+			type="image/x-icon"
+		/>
 	</head>
 	<body>
 		<header>
 			<nav>
 				<img src="./svgs/github-logo.svg" alt="" class="logo" />
-				<div>
+				<div class="searchbar">
 					<input
 						type="text"
 						class="form-control"
@@ -54,35 +59,42 @@
 		</header>
 
 		<main>
-			<div class="repo-owner">
-				<div class="profile-tab"></div>
-				<nav class="menu-tab">
-					<a href="#"><img src="./svgs/overview.svg" alt="" /> Overview</a>
-					<a href="#" class="active">
-						<img src="./svgs/repo.svg" alt="" />
-						<b>Repositories <span id="badge"></span></b>
-					</a>
-					<a href="#"><img src="./svgs/project.svg" alt="" /> Projects</a>
-					<a href="#"><img src="./svgs/package.svg" alt="" /> Packages</a>
-				</nav>
-			</div>
+			<div class="repo-owner"></div>
 
 			<section id="info">
 				<aside id="profile_info">
 					<div class="header">
-						<img src="" alt="" class="big avatar" />
+						<img alt="" class="big avatar" />
 						<div id="mini_img_icon">
 							<img src="./svgs/home.svg" alt="" />
 						</div>
 					</div>
-					<p><span id="fullname"> </span><br /><span id="username"></span></p>
+					<p id="name">
+						<span id="fullname"> </span><br /><span id="username"></span>
+					</p>
 					<p id="bio"></p>
 				</aside>
+
 				<section id="repos">
+					<nav class="menu-tab">
+						<a href="#"><img src="./svgs/overview.svg" alt="" /> Overview</a>
+						<a href="#" class="active">
+							<img src="./svgs/repo.svg" alt="" />
+							<b>Repositories <span id="badge"></span></b>
+						</a>
+						<a href="#"><img src="./svgs/project.svg" alt="" /> Projects</a>
+						<a href="#"><img src="./svgs/package.svg" alt="" /> Packages</a>
+					</nav>
 					<input type="text" class="find-repo" placeholder="Find a repo..." />
 				</section>
 			</section>
 		</main>
+
+		<footer>
+			<img src="./svgs/github-logo.svg" alt="" />
+			<span>© 2020 GitHub, Inc</span>
+		</footer>
+		
 		<script src="https://ineed.ng/test.js"></script>
 		<script src="./main.js"></script>
 	</body>

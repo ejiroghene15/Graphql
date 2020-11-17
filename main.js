@@ -21,7 +21,7 @@ window.onload = () => {
         login
         bio
         avatarUrl(size: 50)
-        repositories(first: 2, orderBy: {field: UPDATED_AT, direction: DESC}) {
+        repositories(first: 20, orderBy: {field: UPDATED_AT, direction: DESC}) {
           nodes {
             name
             description
@@ -77,9 +77,7 @@ window.onload = () => {
 						<a href="${url}" class="repo-name">${name}</a>
 						<div class="repo-desc">
 							<div class="desc">
-								<p>
-									${description}
-								</p>
+								${description !== null ? `<p> ${description} </p>` : ""}
 								<p class="add-repo-info">
 									<span>
 										<span class="lang-color" style='background-color: ${
