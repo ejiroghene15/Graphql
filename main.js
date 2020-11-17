@@ -11,7 +11,7 @@ window.onload = () => {
 	fetch(URL, {
 		method: "POST",
 		headers: {
-			Authorization: `Token ${Token}`,
+			Authorization: `bearer ${Token}`,
 			"Content-Type": "application/json",
 		},
 		body: JSON.stringify({
