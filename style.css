@@ -1,0 +1,274 @@
+body {
+	margin: 0;
+	font-size: 14px;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+		sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+header {
+	background-color: #24292e;
+	color: #ffffffb3;
+	padding: 1.1em 1.5rem 1.1em 2rem;
+	line-height: 1.5;
+}
+
+header nav {
+	display: flex;
+}
+
+.logo {
+	width: 32px;
+	margin-right: 15px;
+}
+
+input.form-control {
+	width: 20vw;
+	border-radius: 6px;
+	color: #fff;
+	border: 1px solid #444d56;
+	display: inline-block;
+	min-width: 28px;
+	padding: 7px 5px;
+	background: transparent;
+	outline: none !important;
+	vertical-align: top;
+	margin-right: 15px;
+}
+
+input.form-control::placeholder {
+	color: #ffffffb3;
+}
+
+.nav-links {
+	text-decoration: none;
+	color: white;
+	padding: 0px 16px 0px 0px;
+	font-weight: bold;
+	vertical-align: sub;
+}
+
+nav #profile {
+	margin-left: auto;
+	align-self: center;
+}
+
+.notification {
+	position: relative;
+	display: inline-block;
+}
+
+.notification .indicator {
+	position: absolute;
+	top: -6px;
+	left: 7px;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-image: linear-gradient(#54a3ff, #006eed);
+	background-clip: padding-box;
+	border: 2px solid var(--color-header-bg);
+	border-radius: 50%;
+}
+
+.more {
+	padding: 0 0.5em;
+}
+
+.more img:first-of-type {
+	position: relative;
+	right: -5px;
+}
+
+.repo-owner {
+	display: flex;
+	padding: 2.8rem 2.5rem 1rem;
+	border-bottom: 1px solid #eaecef;
+}
+
+.repo-owner .profile-tab,
+#info #profile_info {
+	width: 20vw;
+	margin-right: 1em;
+	flex: 0.4;
+}
+
+.repo-owner .menu-tab,
+#info #repos {
+	flex: 1;
+}
+
+.repo-owner .menu-tab a {
+	text-decoration: none;
+	padding: 0 0.9em 1em;
+	color: #24292e;
+	position: relative;
+	height: 20px;
+	border-bottom: 2px solid transparent;
+}
+
+.repo-owner .menu-tab a:not(.active) {
+	transition: border-bottom 0.3s 0s ease-out;
+}
+
+.repo-owner .menu-tab a:hover {
+	border-bottom: 2px solid rgb(181, 173, 173);
+}
+
+.repo-owner .menu-tab a.active {
+	border-bottom: 2px solid #f9826c;
+}
+
+.repo-owner .menu-tab a img {
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.repo-owner .menu-tab a span#badge {
+	padding: 5px 6px;
+	background-color: #d1d5da80;
+	color: #24292e;
+	font-size: 12px;
+	border-radius: 50%;
+	font-weight: 400 !important;
+}
+
+#info {
+	display: flex;
+	padding: 1rem 2.5rem;
+}
+
+.big.avatar {
+	height: auto;
+	width: 250px;
+	max-width: 100%;
+	border-radius: 50%;
+	margin: -4em auto 0px;
+	padding: 2px;
+	position: relative;
+}
+
+#profile_info .header {
+	position: relative;
+	display: inline-block;
+}
+
+#mini_img_icon {
+	height: 35px;
+	width: 35px;
+	border-radius: 50%;
+	box-shadow: 1px 0px 9px #000;
+	background: #fff;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	right: 3px;
+	bottom: 40px;
+}
+
+#fullname {
+	font-size: 26px;
+	font-weight: bold;
+}
+
+#username {
+	font-size: 20px;
+	font-weight: 100 !important;
+}
+
+#bio {
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+.find-repo {
+	width: 100%;
+	padding: 10px;
+	background-color: #fff;
+	color: #24292e;
+	border: 1px solid #e1e4e8;
+	border-radius: 6px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+
+.find-repo:focus {
+	outline: #0366d6 !important;
+}
+
+.repo-list {
+	border-bottom: 1px solid #eaecef;
+	padding: 24px 0px;
+}
+
+.repo-list:first-of-type {
+	border-top: 1px solid #eaecef;
+}
+
+.repo-name {
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 600;
+	color: #0366d6;
+	line-height: 2em;
+}
+
+.repo-desc {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.repo-desc .desc {
+	flex: 0.7;
+}
+
+.repo-desc p {
+	margin: 0;
+	color: #586069;
+	line-height: 1.5em;
+}
+
+.repo-desc button.star {
+	color: #24292e;
+	padding: 5px 12px;
+	background-color: #fafbfc;
+	border-radius: 6px;
+	outline: none !important;
+	border: 1px solid #1b1f2326;
+}
+
+.repo-desc button.star img {
+	vertical-align: sub;
+}
+
+.add-repo-info {
+	margin-top: 10px !important;
+	font-size: 12px;
+}
+
+.lang-color {
+	height: 13px;
+	width: 13px;
+	border-radius: 50%;
+	background-color: #0366d6;
+	display: inline-block;
+	vertical-align: text-bottom;
+}
+
+.lang {
+	vertical-align: text-top;
+}
+
+.add-repo-info > span {
+	margin-right: 1.5em;
+}
+
+.fork_n_star {
+	display: inline-block;
+}
+
+.fork_n_star img {
+	position: relative;
+	top: 3px;
+}
