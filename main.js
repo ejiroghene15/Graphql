@@ -1,6 +1,6 @@
 window.onload = () => {
 	const URL = "https://api.github.com/graphql";
-	let Token = "6b8b47eb31b9e308b18e8268926bcb9e84dea7b4";
+	let Token = "7c52a4b0ce448aa44cde67d026d001350cdc1729";
 	let repos = document.querySelector("#repos");
 	let avatar = document.querySelectorAll(".avatar");
 	let fullname = document.querySelector("#fullname");
