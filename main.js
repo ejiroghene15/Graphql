@@ -1,6 +1,6 @@
 window.onload = () => {
 	const URL = "https://api.github.com/graphql";
-	let Token = "ad191c1d34e0eb267b2186144eb7a72ca09443d3";
+	let Token = "6b8b47eb31b9e308b18e8268926bcb9e84dea7b4";
 	let repos = document.querySelector("#repos");
 	let avatar = document.querySelectorAll(".avatar");
 	let fullname = document.querySelector("#fullname");
@@ -11,7 +11,7 @@ window.onload = () => {
 	fetch(URL, {
 		method: "POST",
 		headers: {
-			Authorization: `Bearer ${Token}`,
+			Authorization: `Token ${Token}`,
 			"Content-Type": "application/json",
 		},
 		body: JSON.stringify({
